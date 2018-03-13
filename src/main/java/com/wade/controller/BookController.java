@@ -23,4 +23,10 @@ public class BookController {
     public List<Book> getAllbooks(){
         return bookService.getAllBooks();
     }
+
+    @RequestMapping("/select")
+    @ResponseBody
+    public Book getBookById(){
+        return bookService.getBookById(3);
+    }
 }

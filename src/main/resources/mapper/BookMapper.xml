@@ -6,4 +6,9 @@
     <select id="getAllBooks" resultType="com.wade.entity.Book">
         SELECT id,title,price,publishDate FROM books
     </select>
+
+    <!--根据id获取图书-->
+    <select id="getBookById" resultType="com.wade.entity.Book">
+        SELECT * FROM books WHERE id = #{id}
+    </select>
 </mapper>
